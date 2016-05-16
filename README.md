@@ -16,7 +16,19 @@ SourceTree 다운로드
 SourceTree 에 git 폴더 등록
 commit -> push
 ```
-하다가 안되면 인터넷에 돌아다니는 가이드를 참고하시오.
+###Step 2. Data 저장.
+1. 새로 프로젝트를 만들고, 만들때 Core Data 를 사용하게 체크하시오. **중요**
+2. Step1 의 과제를 정리해서 새 프로젝트에 추가하시오.
+3. 2번의 행동을 할때 ray wenderlich의 [코딩룰](https://github.com/raywenderlich/swift-style-guide)을 읽고 지키려고 노력해 보시오
+4. 텍스트를 입력했을때의 날짜/시간(yyyyMMddHHmmsss) + 텍스트를 DB 에 저장하시오.(Core data 이용)
+5. 잘 입력했는지 값을 읽어오고 로그를 찍어보시오.
+
+### Step 3. Table view / DB delete
+### Step 4. DB replace, update
+### Step 5. 날씨 API 사용해보기
+### Step 6. Autolayout
+### Step 7. 난몰라 
+
 
 ```
 **채점기준**
