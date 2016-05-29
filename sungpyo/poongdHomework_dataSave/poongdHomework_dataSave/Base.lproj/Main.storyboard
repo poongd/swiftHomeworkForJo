@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Dum-f3-S5a">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="fgB-BL-5Os">
+            <objects>
+                <viewController id="Dum-f3-S5a" customClass="ViewController" customModule="poongdHomework_dataSave" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tOF-lu-0ds"/>
+                        <viewControllerLayoutGuide type="bottom" id="rwA-og-vBW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1kP-NX-1Lc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pooongd Homework _ notepad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3T-bF-bSw">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.6491088478" blue="0.46481105480000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <color key="textColor" red="0.85504902059999999" green="0.91283691259999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="28" width="335" height="49"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d13-ax-NjT">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="313" y="166" width="42" height="22"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDK-wi-iZ3">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="105" width="245" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Os-Cg-xbH">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.68778993879999994" green="1" blue="0.27528888950000002" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="아무동작도 하지 않는 버튼"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="110" y="213" width="155" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="unKnow:" destination="Dum-f3-S5a" eventType="touchUpInside" id="GB9-sT-Xua"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="글자수 20자 이내" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bqi-bU-5VO">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="128" width="335" height="30"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="Dum-f3-S5a" id="C4Y-hl-Sw4"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTw-kF-kxn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.94650475482703933" green="1" blue="0.33584978036956603" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="누르면 에러"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhT-vL-8R9">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.45351065879778885" green="1" blue="0.52320691647531659" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="save"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="261" width="102" height="63"/>
+                                </variation>
+                                <connections>
+                                    <action selector="saveButton:" destination="Dum-f3-S5a" eventType="touchUpInside" id="wKP-XQ-BWw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t97-JH-aTE">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.79173346833507507" blue="0.78075728209418427" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="출력"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="154" y="261" width="66" height="63"/>
+                                </variation>
+                                <connections>
+                                    <action selector="findContact:" destination="Dum-f3-S5a" eventType="touchUpInside" id="LDf-qM-Nuz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="y3T-bF-bSw"/>
+                                <exclude reference="d13-ax-NjT"/>
+                                <exclude reference="XDK-wi-iZ3"/>
+                                <exclude reference="0Os-Cg-xbH"/>
+                                <exclude reference="Bqi-bU-5VO"/>
+                                <exclude reference="rTw-kF-kxn"/>
+                                <exclude reference="yhT-vL-8R9"/>
+                                <exclude reference="t97-JH-aTE"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="y3T-bF-bSw"/>
+                                <include reference="d13-ax-NjT"/>
+                                <include reference="XDK-wi-iZ3"/>
+                                <include reference="0Os-Cg-xbH"/>
+                                <include reference="Bqi-bU-5VO"/>
+                                <exclude reference="rTw-kF-kxn"/>
+                                <include reference="yhT-vL-8R9"/>
+                                <include reference="t97-JH-aTE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="notepad_Text" destination="Bqi-bU-5VO" id="3gy-xF-uiE"/>
+                        <outlet property="textLength_Check" destination="d13-ax-NjT" id="UVh-1l-bmg"/>
+                        <outlet property="today_Data" destination="XDK-wi-iZ3" id="fCD-a6-l5J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nU9-zm-Gmc" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="309.75" y="386.625"/>
+        </scene>
+    </scenes>
+</document>
