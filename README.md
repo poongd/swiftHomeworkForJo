@@ -24,7 +24,13 @@ commit -> push
 5. 텍스트를 입력했을때의 날짜/시간(yyyyMMddHHmmsss) + 텍스트를 DB 에 저장하시오.(Core data 이용)
 6. 잘 입력했는지 값을 읽어오고 로그를 찍어보시오.
 
-### Step 3. Table view / DB delete
+### Step 3. Table view / DB delete (기한 6월6일)
+1. NoteListViewController 를 만들고 UITableView 를 삽입하시오.
+2. 값이 저장되면 자동으로 NoteListViewController 가 뜨게 하시오. (어떠한 방법이든 무관)
+3. UITableViewCell 을 상속받은 NoteListCell 을 만들고 날짜(요일) : 텍스트 내용이 출력되는 cell 을 만드시오.
+4. 3번의 cell 에 [삭제] 버튼을 추가하시오.
+5. 3번의 Cell 을 활용해서 DB 에 저장된 내용을 TableView 에 띄우시오
+6. [삭제] 버튼을 눌렀을때 해당 cell 이 지워지고 (애니메이션 필요없음), DB 에서도 해당내용을 삭제하시오.
 ### Step 4. DB replace, update
 ### Step 5. 날씨 API 사용해보기
 ### Step 6. Autolayout
