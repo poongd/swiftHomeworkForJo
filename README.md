@@ -31,6 +31,7 @@ commit -> push
 4. 3번의 cell 에 [삭제] 버튼을 추가하시오.
 5. 3번의 Cell 을 활용해서 DB 에 저장된 내용을 TableView 에 띄우시오
 6. [삭제] 버튼을 눌렀을때 해당 cell 이 지워지고 (애니메이션 필요없음), DB 에서도 해당내용을 삭제하시오.
+
 ### Step 4. DB replace, update
 ### Step 5. 날씨 API 사용해보기
 ### Step 6. Autolayout
