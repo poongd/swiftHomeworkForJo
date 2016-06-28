@@ -32,7 +32,11 @@ commit -> push
 5. 3번의 Cell 을 활용해서 DB 에 저장된 내용을 TableView 에 띄우시오
 6. [삭제] 버튼을 눌렀을때 해당 cell 이 지워지고 (애니메이션 필요없음), DB 에서도 해당내용을 삭제하시오.
 
-### Step 4. DB replace, update
+### Step 4. DB replace, update (기한 7월 3일)
+1. cell 을 눌렀을때(didSelected) 팝업이 떠서 해당내용을 TextView에 담아서 보여주고, 수정이 가능하게 하시오.
+2. [저장] 버튼을 누르면 해당내용이 DB 에 저장되게 하시오. (이때 새로 저장하는게 아니고 기존의 내용을 교체하시오.)
+3. [취소] 버튼을 누르면 그냥 취소되게 하시오.
+4. DB 에 modifiedDate를 추가해서 [저장]을 누르면 내용과 함께 수정날짜가 변경되게 하시오. (표시할 필요는없음)
 ### Step 5. 날씨 API 사용해보기
 ### Step 6. Autolayout
 ### Step 7. 난몰라 
