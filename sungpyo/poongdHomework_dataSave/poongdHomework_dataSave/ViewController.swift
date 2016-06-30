@@ -9,6 +9,9 @@
 import UIKit
 import CoreData
 
+let Context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+
+var cellArray = [NSManagedObject]()
 extension ViewController: UITextFieldDelegate{
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
@@ -20,7 +23,7 @@ extension ViewController: UITextFieldDelegate{
         self.view.endEditing(true) // 바탕 터치하면 키보드 내리기
     }
     
-    func textFieldDidChange(textField: UITextField) {
+    func textFieldDidChange(textField: UITextField){
         
         if var unverifiedText = notepad_Text.text where unverifiedText.characters.count > text_Limit{ //텍스트필드 내 글자수가 보다 크거나 같을경우.
             
@@ -47,6 +50,7 @@ extension ViewController: UITextFieldDelegate{
 
 class ViewController: UIViewController{
     
+    
     @IBAction func unKnow(sender: UIButton) {
         button_Alram("이것은 버튼입니다", message: "아무 동작도 하지 않아요")
     }
@@ -65,6 +69,7 @@ class ViewController: UIViewController{
         do {
             
             let Result = try Context.executeFetchRequest(request) as! [NSManagedObject] // NSManagedObject의 배열을 Result에 담음.
+            cellArray = Result
             
             for index in 0..<Result.count { //Result가 NSManagedObject의 배열이므로, ManagedObjectContext 의 갯수만큼 for문으로 반복.
                 let managedObj = Result[index] //각 ManagedObjectContext 번호의 배열을 managedObj 에 담음.
@@ -73,6 +78,9 @@ class ViewController: UIViewController{
                 let dics = managedObj.dictionaryWithValuesForKeys(allKeys) //딕셔너리 배열구조로 바꿔서 입력하는거같지만 이놈 정확히 이해안감2..
                 print("\(index+1)번 데이터")
                 print(dics)
+                
+                
+                
             }
             
         } catch let error as NSError {
@@ -123,16 +131,30 @@ class ViewController: UIViewController{
         }
     }
 
-    let Context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+    // 여기부터 클래스변수.
+    
+    
     /*코어 데이터를 이용하여 데이터를 저장하고 가져오기 위해서는 애플리케이션 델리게이트의 매니지드 객체 콘텍스트에 대한 참조체가 필요하다. */
     
     let text_Limit = 20 // 글자수 20자로 제한
     var text_length = 0 // 입력한 텍스트의 길이를 저장하기 위한 변수.
     var previousText:String! // 변경되기 전 텍스트를 저장하기 위한 변수.
     
+    func fa(){
+        let request = NSFetchRequest(entityName: "Notepad")
+        do {
+            try Context.executeFetchRequest(request) as! [NSManagedObject]
+            
+        }catch let error as NSError {
+            notepad_Text.text = error.localizedFailureReason // 요 에러부분도 어떤 역할을 하는지는 알겠으나 error.localizedFailureReason 이해안감.
+            print("error")
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        fa();
         notepad_Text.delegate = self
         date("yyyy년 MM월 dd일(E)") //날짜 형식을 지정하고 앱 실행시 지정한 날짜 형식으로 화면에 출력.
         notepad_Text.addTarget(self, action: #selector(ViewController.textFieldDidChange(_:)), forControlEvents: UIControlEvents.EditingChanged) //앱 시작시 textFieldDidChange 호출
