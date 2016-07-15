@@ -20,4 +20,7 @@ class Notepad: NSManagedObject {
     
 // Insert code here to add functionality to your managed object subclass
 
+    
+    
+    //test222222
 }
