@@ -12,6 +12,12 @@ import CoreData
 
 class Notepad: NSManagedObject {
 
+    
+    //test
+    
+    //test
+    
+    
 // Insert code here to add functionality to your managed object subclass
 
 }
