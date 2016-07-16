@@ -12,7 +12,7 @@ import CoreData
 
 class Notepad: NSManagedObject {
 
-    
+    //1111
     //test
     
     //test
