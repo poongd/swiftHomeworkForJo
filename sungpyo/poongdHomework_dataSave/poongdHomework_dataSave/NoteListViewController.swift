@@ -9,24 +9,24 @@
 import UIKit
 
 class NoteListViewController: UITableViewController {
+    
+    @IBAction func backBtn(sender: AnyObject) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
 
-//    let Context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
+    
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+        
         return 1
     }
 
@@ -44,9 +44,25 @@ class NoteListViewController: UITableViewController {
             
             cell.cell_text.text = managedObj.valueForKey("text") as? String
             cell.cell_date.text = managedObj.valueForKey("date") as? String
-
+        
         return cell
     }
+    
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) { //세그만들어서 출력.
+//        if segue.identifier == "segue_detail" {
+//        
+//        let cell = sender as! NoteListCell
+//        let path = self.listView.indexPathForCell(cell)
+//        
+//        let param = cellArray[path!.row]
+//            
+//        let text = param.valueForKey("text") as? String
+//        let date = param.valueForKey("date") as? String
+//        
+//        (segue.destinationViewController as? PopupViewController)?.text = text
+//        (segue.destinationViewController as? PopupViewController)?.date = date
+//        }
+//    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -55,7 +71,17 @@ class NoteListViewController: UITableViewController {
         return true
     }
     */
-
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
+        
+       let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("popUpViewID") as! PopupViewController
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMoveToParentViewController(self)
+        
+    }
+    
+    
      override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){
 
         if editingStyle == .Delete {
@@ -66,15 +92,10 @@ class NoteListViewController: UITableViewController {
                 do{
                     try Context.save()
                         cellArray.removeAtIndex(indexPath.row)
-                
                 }catch{
                     print("삭제 후 저장안됨")
                 }
-            
             self.tableView.reloadData()
-            
-            
-            
             
 //            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         }

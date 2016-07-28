@@ -11,6 +11,7 @@
 		F932D22F1CF99A8E007C293C /* Notepad.swift in Sources */ = {isa = PBXBuildFile; fileRef = F932D22D1CF99A8E007C293C /* Notepad.swift */; };
 		F932D25C1CFEBF2C007C293C /* NoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F932D25B1CFEBF2C007C293C /* NoteListViewController.swift */; };
 		F932D25E1D056C96007C293C /* NoteListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F932D25D1D056C96007C293C /* NoteListCell.swift */; };
+		F93D4ED91D48831B002A4B82 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93D4ED81D48831B002A4B82 /* PopupViewController.swift */; };
 		F961D7B01CEAF47A00FB8FAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961D7AF1CEAF47A00FB8FAB /* AppDelegate.swift */; };
 		F961D7B21CEAF47A00FB8FAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F961D7B11CEAF47A00FB8FAB /* ViewController.swift */; };
 		F961D7B51CEAF47A00FB8FAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F961D7B31CEAF47A00FB8FAB /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		F932D2561CFBED52007C293C /* poongdHomework_dataSave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = poongdHomework_dataSave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F932D25B1CFEBF2C007C293C /* NoteListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteListViewController.swift; sourceTree = "<group>"; };
 		F932D25D1D056C96007C293C /* NoteListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteListCell.swift; sourceTree = "<group>"; };
+		F93D4ED81D48831B002A4B82 /* PopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		F961D7AF1CEAF47A00FB8FAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F961D7B11CEAF47A00FB8FAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F961D7B41CEAF47A00FB8FAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				F932D25B1CFEBF2C007C293C /* NoteListViewController.swift */,
 				F961D7C41CEAF63400FB8FAB /* Date.swift */,
 				F961D7B31CEAF47A00FB8FAB /* Main.storyboard */,
+				F93D4ED81D48831B002A4B82 /* PopupViewController.swift */,
 				F932D25D1D056C96007C293C /* NoteListCell.swift */,
 				F961D7B91CEAF47B00FB8FAB /* Assets.xcassets */,
 				F961D7BB1CEAF47B00FB8FAB /* LaunchScreen.storyboard */,
@@ -150,6 +153,7 @@
 				F932D22F1CF99A8E007C293C /* Notepad.swift in Sources */,
 				F961D7B81CEAF47B00FB8FAB /* poongdHomework_dataSave.xcdatamodeld in Sources */,
 				F932D22E1CF99A8E007C293C /* Notepad+CoreDataProperties.swift in Sources */,
+				F93D4ED91D48831B002A4B82 /* PopupViewController.swift in Sources */,
 				F961D7B01CEAF47A00FB8FAB /* AppDelegate.swift in Sources */,
 				F961D7C51CEAF63400FB8FAB /* Date.swift in Sources */,
 				F932D25E1D056C96007C293C /* NoteListCell.swift in Sources */,

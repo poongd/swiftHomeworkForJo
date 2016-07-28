@@ -8,22 +8,19 @@
 
 import UIKit
 
-class NoteListCell: UITableViewCell {
-    
+class NoteListCell: UITableViewCell {    
 
     @IBOutlet var cell_text: UILabel!
     @IBOutlet var cell_date: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        
+
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
 
 }

@@ -156,6 +156,7 @@ class ViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         fa();
         notepad_Text.delegate = self
         date("yyyy년 MM월 dd일(E)") //날짜 형식을 지정하고 앱 실행시 지정한 날짜 형식으로 화면에 출력.
