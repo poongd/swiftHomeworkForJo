@@ -109,7 +109,7 @@ class ViewController: UIViewController{
 //        let entityDescription = NSEntityDescription.entityForName("Notepad", inManagedObjectContext: Context)
         /*NSEntityDescription.entityForName 을 통해서 "Notepad"엔티티 안에 새로운 NSManagedObjectContext 생성*/
 //        let contact = Notepad(entity: entityDescription!, insertIntoManagedObjectContext: Context)
-        /* contact는 Notepad 클래스 이며 Context 라는 새로운 ManagedObjectContext 생성. */
+        /* contact는 Notepad 클래스 이며 Context 라는 새로운 ManagedObjectContext 생성.*/
         
         let contact = NSEntityDescription.insertNewObjectForEntityForName("Notepad", inManagedObjectContext: Context) as! Notepad
         // 한줄 변경시 다음과 같이 가능하다고 함.

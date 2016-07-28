@@ -23,8 +23,6 @@ class NoteListViewController: UITableViewController {
         super.didReceiveMemoryWarning()
     }
 
-    
-
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         
         return 1

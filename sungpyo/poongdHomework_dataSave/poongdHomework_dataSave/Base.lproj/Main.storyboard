@@ -244,6 +244,9 @@
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="26" y="216" width="30" height="30"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="SaveBtn:" destination="QCZ-Cp-vW2" eventType="touchUpInside" id="6Xp-3s-dai"/>
+                                        </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text=" " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PrK-Ra-hzu">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>

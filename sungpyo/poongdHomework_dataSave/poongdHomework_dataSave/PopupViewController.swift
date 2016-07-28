@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 
 class PopupViewController: UIViewController {
@@ -36,8 +37,18 @@ class PopupViewController: UIViewController {
         popUpTextV.text = text
         
     }
-    
 
+    @IBAction func SaveBtn(sender: AnyObject){
+        let contact = NSEntityDescription.insertNewObjectForEntityForName("Notepad", inManagedObjectContext: Context) as! Notepad
+        contact.text = "11"
+        do{
+            try Context.save()
+            print("수정완료")
+        }catch let error as NSError  { // 에러 발생시
+            popUpTextV.text = error.localizedFailureReason
+            print("수정실패.")
+        }
+    }
     
 
     /*
