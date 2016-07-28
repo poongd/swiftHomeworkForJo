@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="i6L-VO-Prn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="i6L-VO-Prn">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -8,7 +8,6 @@
         <!--View Controller-->
         <scene sceneID="fgB-BL-5Os">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nU9-zm-Gmc" sceneMemberID="firstResponder"/>
                 <viewController id="Dum-f3-S5a" customClass="ViewController" customModule="poongdHomework_dataSave" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tOF-lu-0ds"/>
@@ -137,6 +136,7 @@
                         <outlet property="today_Data" destination="XDK-wi-iZ3" id="fCD-a6-l5J"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nU9-zm-Gmc" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="372.75" y="386.625"/>
         </scene>
@@ -149,7 +149,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mfJ-sw-ZiT">
-                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <rect key="frame" x="0.0" y="72" width="375" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Back"/>
                             <connections>
@@ -158,7 +158,7 @@
                         </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="44" id="Dxt-nB-qJ9" customClass="NoteListCell" customModule="poongdHomework_dataSave" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dxt-nB-qJ9" id="PGD-Do-kPN">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -297,7 +297,6 @@
         <!--Navigation Controller-->
         <scene sceneID="DMr-34-k8E">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Stc-vM-ZKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController navigationBarHidden="YES" id="i6L-VO-Prn" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3HW-Bs-Qsm">
@@ -308,6 +307,7 @@
                         <segue destination="Dum-f3-S5a" kind="relationship" relationship="rootViewController" id="dzs-vx-ZFb"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Stc-vM-ZKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-381.75" y="386.625"/>
         </scene>

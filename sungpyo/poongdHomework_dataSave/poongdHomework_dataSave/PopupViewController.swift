@@ -12,10 +12,16 @@ import UIKit
 class PopupViewController: UIViewController {
     
     @IBOutlet weak var popUpTextV: UITextView!
+    var Cellrow:Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.8)
+        let CellValue:String = (cellArray[Cellrow].valueForKey("text") as? String)!
+        
+        TextView(CellValue)
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -24,6 +30,11 @@ class PopupViewController: UIViewController {
     }
     @IBAction func closePopUp(sender: AnyObject){
         self.view.removeFromSuperview()
+    }
+    
+    func TextView(text: String){
+        popUpTextV.text = text
+        
     }
     
 
